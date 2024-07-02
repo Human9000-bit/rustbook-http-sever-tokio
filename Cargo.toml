@@ -5,7 +5,9 @@ edition = "2021"
 authors = ["human9000"]
 
 [dependencies]
+log = "0.4.22"
 tokio = { version = "1.38.0", features = ["full"] }
+ureq = "2.9.7"
 
 
 [profile.release]

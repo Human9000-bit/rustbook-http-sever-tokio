@@ -27,5 +27,5 @@ async fn handle_connection(mut stream: TcpStream) {
         format!("{status_line}\r\nContent-Length: {}\r\n\r\n{}", page.length, page.contents);
 
     stream.write_all(response.as_bytes()).await.unwrap();
-    // println!("handled connection")
+    log::info!("handled connection: page {path}");
 }
