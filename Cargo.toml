@@ -3,6 +3,7 @@ name = "http-server"
 version = "0.1.0"
 edition = "2021"
 authors = ["human9000"]
+license = "MIT"
 
 [dependencies]
 log = "0.4.22"
@@ -11,6 +12,10 @@ tokio = { version = "1.38.0", features = ["full"] }
 
 [profile.release]
 opt-level = 3
-lto = "thin"
+lto = "fat"
 codegen-units = 1
 panic = "abort"
+
+[profile.dev]
+opt-level = 1
+debug = true
