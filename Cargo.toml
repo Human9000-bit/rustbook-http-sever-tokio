@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["human9000"]
 license = "MIT"
+readme = "README.md"
 
 [dependencies]
 log = "0.4.22"
